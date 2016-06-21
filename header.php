@@ -48,7 +48,7 @@
 						<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 					</div>
 					<nav class="home-nav nav">
-						<div class="sidr-close"><i class="fa fa-fw fa-lg fa-close"></i><span class="sr-only"></span></div>
+						<div class="home-sidr sidr-close"><i class="fa fa-fw fa-lg fa-close"></i><span class="sr-only"></span></div>
 						<div class="home-funnel">
 							<?php 
 
