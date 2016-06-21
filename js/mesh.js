@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
       if (target.length) {
         $('html,body').animate({
           //'top-50' is custom.  limits the offset to top of window plus 50px
-          scrollTop: (target.offset().top-50)
+          scrollTop: (target.offset().top)
         }, 800);
         return false;
       }
