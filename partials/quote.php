@@ -11,7 +11,7 @@ $quote_bg_URL = $quote_bg['sizes']['large'];
 
 ?>
 
-<?php if($quote_type == 'image') { ?>
+<?php if($quote_type == 'image' && $quote_text != "") { ?>
 <div class="row">
 	<div class="quote-wrap">
 		<div class="quote-text seven columns">
@@ -33,7 +33,7 @@ $quote_bg_URL = $quote_bg['sizes']['large'];
 	</div>
 </div><!--end row-->
 
-<?php }else{ ?>
+<?php }elseif ($quote_type == 'no-image' && $quote_text != "") { ?>
 
 <div class="row">
 	<div class="twelve columns">
