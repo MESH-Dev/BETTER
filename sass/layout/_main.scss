@@ -82,6 +82,12 @@ body{
 
 a{
 	color:$cyan;
+
+	&:hover,
+	&:active,
+	&:focus{
+		color:$purple;
+	}
 }
 
 strong{
@@ -230,6 +236,9 @@ header.interior{
 		@include neutra_bold;
 		font-size:24px;
 		margin-top:80px;
+		// margin-top: 155px;
+  //   	position: absolute;
+  //  		width: 100%;
 	}
 
 	.down{
@@ -274,15 +283,35 @@ header.interior{
 			display:inline-block;
 			float:left;
 			padding-right:20px;
-			border-left:2px solid $white;
+			//border-left:2px solid $white;
+			transition:.2s all;
+			position:relative;
+
+			&:after{
+				content:'';
+				background:white;
+				width:2px;
+				left:0;
+				top:0;
+				height:100%;
+				z-index:-1;
+				position:absolute;
+				transition:.2s all;
+
+			}
 
 			&:hover{
+				//background:$white;
+
+				&:after{
+					width:100%;
+				}
 				.funnel-title{
 					color:$cyan;
 				}
 
 				.funnel-text{
-					text-decoration:underline;
+					color:$grey;
 				}
 			}
 		}
@@ -655,6 +684,14 @@ header.interior{
 		line-height:1.25;
 
 	}
+
+	a{
+		&:hover,
+		&:active,
+		&:focus{
+			color:$white;
+		}
+	}
 }
 
 //Landing page
@@ -682,7 +719,7 @@ header.interior{
 
 	.banner-text{
 		height:50vh;
-		padding:20px;
+		padding:55px;
 		background-color:$purple;
 		h2{
 			color:white;
@@ -852,6 +889,14 @@ footer{
 	// 		}
 	// 	}
 	// }
+
+	a{
+		&:hover,
+		&:active,
+		&:focus{
+			color:$white;
+		}
+	}
 
 	.copyright{
 		
