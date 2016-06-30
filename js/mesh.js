@@ -72,10 +72,8 @@ $('.sidr-trigger').sidr({
     });
 
  $('.sidr-trigger').click(function(){
-  
   $('.fa').toggleClass('fa-close');
-  $('.fa').toggleClass('fa-bars')
- 
+  $('.fa').toggleClass('fa-bars');
 
  });
 

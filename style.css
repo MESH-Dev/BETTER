@@ -901,7 +901,7 @@ header.interior {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1050px) {
   /* line 212, sass/layout/_main.scss */
   .wrap {
     max-width: 96%;
