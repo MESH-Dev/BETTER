@@ -71,4 +71,12 @@ $('.sidr-trigger').sidr({
        //console.log("Sidr should be closed");
     });
 
+ $('.sidr-trigger').click(function(){
+  
+  $('.fa').toggleClass('fa-close');
+  $('.fa').toggleClass('fa-bars')
+ 
+
+ });
+
 });

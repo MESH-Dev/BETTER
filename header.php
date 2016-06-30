@@ -46,10 +46,10 @@
 <body <?php body_class(); ?>>
 
 	<div id="page" class='hfeed site'>
+		<div class="sidr-trigger <?php if (is_front_page()) {echo "sidr-frontpage";}else{echo "sidr-interior";} ?>"><i class="fa fa-fw fa-lg fa-bars"></i></div>
+		<?php //if (is_front_page()){ ?>
 
-		<?php if (is_front_page()){ ?>
-
-		<header>
+		<header class="<?php if (is_front_page()) {echo "frontpage";}else{echo "interior";} ?>">
 			<div class="container">
 
 				<div class="twelve columns"><!--  -->
@@ -58,7 +58,7 @@
 						<!-- <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 					</div>
 					<nav class="home-nav nav">
-						<div class="home-sidr sidr-close"><i class="fa fa-fw fa-lg fa-close"></i><span class="sr-only"></span></div>
+						<!-- <div class="home-sidr sidr-close"><i class="fa fa-fw fa-lg fa-close"></i><span class="sr-only"></span></div> -->
 						<div class="home-funnel">
 							<?php 
 
@@ -124,20 +124,20 @@
 				</div>
 
 			</div>
-			<div class="sidr-trigger"><i class="fa fa-fw fa-lg fa-bars"></i></div>
+			<!-- <div class="sidr-trigger"><i class="fa fa-fw fa-lg fa-bars"></i></div> -->
 		</header>
 
-		<?php }else{ ?>
+		<?php //}else{ ?>
 
-		<header class="interior">
+		<!-- <header class="interior">
 			<div class="container">
 
-				<!-- two columns -->
+				
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/img/better-logo.png"></a>
 					</div>
 				
-				<!-- ten columns -->
+				
 					<nav class="main-navigation nav">
 						<div class="sidr-close"><i class="fa fa-fw fa-lg fa-close"></i><span class="sr-only"></span></div>
 						<?php if(has_nav_menu('main_nav')){
@@ -168,5 +168,5 @@
 
 			</div>
 			
-		</header> 
-		<?php } ?>
+		</header>  -->
+		<?php //} ?>
