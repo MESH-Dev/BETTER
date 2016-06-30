@@ -901,7 +901,7 @@ header.interior {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 760px) {
   /* line 212, sass/layout/_main.scss */
   .wrap {
     max-width: 96%;
@@ -1031,7 +1031,7 @@ header.interior {
 .sidr-trigger {
   position: absolute;
   right: 20px;
-  top: 83px;
+  top: 54px;
   cursor: pointer;
   z-index: 10000;
   color: white;
