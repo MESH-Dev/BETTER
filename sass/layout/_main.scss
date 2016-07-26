@@ -301,6 +301,19 @@ header.interior{
 
 			}
 
+			&.active{
+				&:after{
+					width:100%;
+				}
+				.funnel-title{
+					color:$cyan;
+				}
+
+				.funnel-text{
+					color:$grey;
+				}
+			}
+
 			&:hover{
 				//background:$white;
 
