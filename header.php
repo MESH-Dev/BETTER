@@ -85,11 +85,13 @@
 								$funnel_text = get_sub_field('funnel_link_text', 'options');
 								$funnel_link = get_sub_field('funnel_link', 'options');
 								$funnel_lt_class = strtolower($funnel_lt);
+								$the_title = get_the_title();
+								// var_dump($the_title);
 
 								//var_dump($funnel_lt);
 
 							?>
-								<li class="<?php echo $funnel_lt_class;?> <?php if($funnel_lt == wp_title()){echo "active";} ?>">
+								<li class="<?php echo $funnel_lt_class;?> <?php if($funnel_lt == $the_title){echo "active";} ?>">
 									<a href="<?php echo $funnel_link; ?>" target="_self"> 
 										<div class="funnel">
 											<h3 class="funnel-title"><?php echo $funnel_lt; ?></h3>
