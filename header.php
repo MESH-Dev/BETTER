@@ -8,7 +8,15 @@
 
 <head>
 	<meta charset="utf-8">
-	<title><?php bloginfo('name'); ?></title>
+	<title>
+		<?php if (is_front_page()){
+			bloginfo('name');
+		}else{
+			bloginfo('name'); wp_title('|', 'true');
+		}
+		?>
+
+	</title>
 
 	<!-- Meta / og: tags -->
 	<meta name="description" content="">
@@ -76,11 +84,12 @@
 								$funnel_lt = get_sub_field('funnel_link_title', 'options');
 								$funnel_text = get_sub_field('funnel_link_text', 'options');
 								$funnel_link = get_sub_field('funnel_link', 'options');
+								$funnel_lt_class = strtolower($funnel_lt);
 
 								//var_dump($funnel_lt);
 
 							?>
-								<li>
+								<li class="<?php echo $funnel_lt_class;?> <?php if($funnel_lt == wp_title()){echo "active";} ?>">
 									<a href="<?php echo $funnel_link; ?>" target="_self"> 
 										<div class="funnel">
 											<h3 class="funnel-title"><?php echo $funnel_lt; ?></h3>
