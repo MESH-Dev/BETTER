@@ -115,6 +115,8 @@ get_header(); ?>
        <div id="quote" class="quote-panel">
             <?php get_template_part('/partials/quote'); ?>
         </div>
+
+        <?php get_template_part('/partials/contact-row'); ?>
     </div>
   </div>
 

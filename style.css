@@ -1633,7 +1633,100 @@ footer .copyright {
   display: none;
 }
 
-/* line 1103, sass/layout/_main.scss */
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* line 1105, sass/layout/_main.scss */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1109, sass/layout/_main.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 1115, sass/layout/_main.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 1120, sass/layout/_main.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1125, sass/layout/_main.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 1130, sass/layout/_main.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1134, sass/layout/_main.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1139, sass/layout/_main.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1145, sass/layout/_main.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+/* line 1153, sass/layout/_main.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1157, sass/layout/_main.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 1161, sass/layout/_main.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+/* line 1165, sass/layout/_main.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+/* line 1174, sass/layout/_main.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* line 1182, sass/layout/_main.scss */
 .sr-only {
   position: absolute;
   width: 1px;

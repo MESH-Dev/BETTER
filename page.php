@@ -42,7 +42,9 @@
 				 <div id="quote" class="quote-panel">
 	      			<?php get_template_part('/partials/quote'); ?>
 	    		</div>
-    				</div>
+
+	    		<?php get_template_part('/partials/contact-row'); ?>
+		</div>
 	</div>
 
 </main><!-- End of Content -->

@@ -76,15 +76,7 @@ get_header(); ?>
     <div id="quote" class="quote-panel">
       <?php get_template_part('/partials/quote'); ?>
     </div>
-    <div class="contact">
-      <div class="row">
-        <p>
-            <?php echo get_field('contact_text') ?></br>
-            <a href="mailto:<?php echo get_field('email'); ?>" ><?php echo get_field('email'); ?></a>
-
-          </p>
-      </div>
-    </div>
+    <?php get_template_part('partials/contact-row'); ?>
   </div>
 
 </main><!-- #main -->
