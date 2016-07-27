@@ -33,6 +33,8 @@ jQuery(document).ready(function($){
     });   
 
   $('.has-parallax').parallax("50%",.05);
+
+  //$('#image-only').parallax("50%",.05);
   }
   //-----------------------------------------------------
 
@@ -142,10 +144,12 @@ $('.sidr-trigger').sidr({
        //console.log("Sidr should be closed");
     });
 
- $('.page-template-default').load(
+ $(window).load(
     function(){
       $.sidr('open', 'sidr-main');
-       //console.log("Sidr should be closed");
+      $('.fa').toggleClass('fa-close');
+      $('.fa').toggleClass('fa-bars');
+       console.log("Did SIDR open?  If not check your code!!");
     });
 
  $('.sidr-trigger').click(function(){
