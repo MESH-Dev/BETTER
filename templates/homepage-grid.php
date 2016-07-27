@@ -49,7 +49,7 @@ get_header(); ?>
         $callout_link = get_sub_field('hp_callout_link'); 
       ?>
 
-        <div class="four columns">
+        <div class="four columns icon-grid-item">
           <div class="callout-icon">
             <img src="<?php echo $icon_lg_URL; ?>" >
           </div>

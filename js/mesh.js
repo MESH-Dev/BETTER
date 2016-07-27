@@ -69,6 +69,28 @@ jQuery(document).ready(function($){
 
    //=============================================================
 
+   //Scroll reveal
+
+   window.sr = ScrollReveal();
+
+    sr.reveal('.landing-row', { 
+      duration: 600,
+      scale: 1,
+      opacity:0,
+      delay: 500,
+      origin: 'bottom',
+      //reset:true
+  });
+
+    sr.reveal('.icon-grid-item', { 
+      duration: 600,
+      scale: 1,
+      opacity:0,
+      delay: 500,
+      origin: 'bottom',
+      reset:true
+  }, 200 );
+
   //Sidr
 
 $('.sidr-trigger').sidr({
