@@ -11,7 +11,7 @@ get_header(); ?>
     $hp_bg_URL = $hp_bg['sizes']['background-fullscreen'];
 
     ?>
-    <div class="home-panel" style="background-image:url('<?php echo $hp_bg_URL; ?>')">
+    <div class="home-panel has-parallax" style="background-image:url('<?php echo $hp_bg_URL; ?>')">
      <!--  <div class="bg" >
         <div class="overlay" aria-hidden="true"></div>
      </div> -->

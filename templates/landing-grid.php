@@ -18,18 +18,20 @@ get_header(); ?>
 
 ?>
 
-<div class="banner">
-  <div class="container">
-  <!-- <img src="<?php echo $thumb; ?>" /> -->
-    <div class="row">
-
-        <?php 
+<?php 
 
         $banner_image = get_field('banner_image');
         $banner_image_URL = $banner_image['sizes']['large'];
         $banner_text = get_field('banner_text');
 
+        if($banner_image != '' || $baner_text != ''){
         ?>
+<div class="banner">
+  <div class="container">
+  <!-- <img src="<?php echo $thumb; ?>" /> -->
+    <div class="row">
+
+
 
         <div class="six columns banner-image " style="background-image:url('<?php echo $banner_image_URL; ?>')">
           <div class="image">
@@ -41,6 +43,8 @@ get_header(); ?>
     </div>
   </div>
 </div>
+
+<?php } ?>
 
 <?php //endif; ?>
 

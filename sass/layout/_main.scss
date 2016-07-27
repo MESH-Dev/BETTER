@@ -223,6 +223,7 @@ header.interior{
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position: center center;
+	background-attachment:fixed;
 	position:relative;
 	min-height:600px;
 
@@ -265,8 +266,8 @@ header.interior{
 .home-nav{
 	display:inline-block;
 	padding-left:60px;
-	padding-top:20px;
-	padding-bottom:20px;
+	padding-top:30px;
+	//padding-bottom:20px;
 }
 
 .header-tagline{
@@ -364,7 +365,7 @@ header.interior{
 .sidr-trigger{
 	position:absolute;
 	right:20px;
-	top:54px;
+	top:77px;
 	cursor:pointer;
 	z-index:10000;
 	color:white;
@@ -1048,7 +1049,7 @@ footer{
 	.sidr{
 		.sidr-inner{
 			ul{
-				margin-top:50px;
+				margin-top:73px;
 			}
 		}
 	}

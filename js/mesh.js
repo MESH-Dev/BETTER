@@ -8,6 +8,7 @@ jQuery(document).ready(function($){
   //Smooth page scroll
   $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
+    console.log('This should be a smooth scroll');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -21,6 +22,19 @@ jQuery(document).ready(function($){
     }
   });
 });
+
+
+  var windowW = $(window).width();
+  
+  if (windowW > 768){
+  $('.panel').each(function(i){
+      i = i++;
+      $(this).parallax("50%", .05);
+    });   
+
+  $('.has-parallax').parallax("50%",.05);
+  }
+  //-----------------------------------------------------
 
    //external link manager
 
