@@ -266,6 +266,7 @@ header.interior{
 	display:inline-block;
 	padding-left:60px;
 	padding-top:20px;
+	padding-bottom:20px;
 }
 
 .header-tagline{
@@ -283,10 +284,15 @@ header.interior{
 		li{
 			display:inline-block;
 			float:left;
-			padding-right:20px;
+			padding-right:30px;
 			//border-left:2px solid $white;
 			transition:.2s all;
 			position:relative;
+
+			a{
+				display:block;
+				padding:10px 0;
+			}
 
 			&:after{
 				content:'';
@@ -303,7 +309,7 @@ header.interior{
 
 			&.active{
 				&:after{
-					width:100%;
+					width:95%;
 				}
 				.funnel-title{
 					color:$cyan;
@@ -318,7 +324,7 @@ header.interior{
 				//background:$white;
 
 				&:after{
-					width:100%;
+					width:95%;
 				}
 				.funnel-title{
 					color:$cyan;
@@ -485,7 +491,8 @@ header.interior{
 		color:$grey;
 		padding:0;
 		margin:0;
-		line-height:1.25;
+		line-height:1.5;
+		font-size:18px;
 
 		&.text{
 			@include neutra_book;
@@ -496,14 +503,14 @@ header.interior{
 
 		&.quote-author{
 			@include neutra_bold;
-			font-size:18px;
+			font-size:16px;
 			text-transform:uppercase;
 		}
 
 		&.author-title{
 			@include neutra_bold;
 			color:$cyan;
-			font-size:18px;
+			font-size:16px;
 			text-transform:uppercase;
 		}
 
@@ -790,11 +797,15 @@ header.interior{
 		flex-direction:row;
 		-ms-flex-direction:row;
 		-webkit-flex-direction:row;
+		//Needed if we go with vertical center alignment
+		align-items:center;
+		justify-content:center;
 
 		.landing-icon{
 			width:25%;
 			float:left;
 			display:inline;
+			text-align:center;
 		}
 
 		.landing-content{

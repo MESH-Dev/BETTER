@@ -6,6 +6,7 @@ function loadup_scripts() {
     wp_enqueue_script( 'sidr-js', get_template_directory_uri().'/js/jquery.sidr.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_style( 'fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css', '1.0.0', true );
     wp_enqueue_style( 'sidr-css', get_template_directory_uri().'/css/jquery.sidr.bare.css', '1.0.0', true );
+    wp_enqueue_style( 'animatecss','//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css', '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'loadup_scripts' );
 
@@ -22,7 +23,7 @@ add_image_size('icon', 150, 150, true);  //provides a square image size for icon
 add_image_size('icon-small', 50, 50, true);  //provides a square image size for icons
 
 
-
+https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css
 
 //Register WP Menus
 register_nav_menus(
