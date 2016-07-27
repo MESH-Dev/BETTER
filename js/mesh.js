@@ -147,7 +147,9 @@ $('.sidr-trigger').sidr({
  $(window).load(
   
     function(){
-      if($('body').hasClass('page-template-default') || $('body').hasClass('page-id-118')){
+
+      var width = $(window).width();
+      if($('body').hasClass('page-template-default') || $('body').hasClass('page-id-118') && width > 767){
       $.sidr('open', 'sidr-main');
       $('.fa').toggleClass('fa-close');
       $('.fa').toggleClass('fa-bars');
