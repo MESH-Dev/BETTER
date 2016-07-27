@@ -24,7 +24,7 @@ get_header(); ?>
         $banner_image_URL = $banner_image['sizes']['large'];
         $banner_text = get_field('banner_text');
 
-        if($banner_image != '' || $baner_text != ''){
+        if($banner_image != '' || $banner_text != ''){
         ?>
 <div class="banner">
   <div class="container">

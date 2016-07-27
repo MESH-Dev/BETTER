@@ -91,6 +91,41 @@ jQuery(document).ready(function($){
       reset:true
   }, 200 );
 
+      sr.reveal('.page-template-default .text-content', { 
+      duration: 600,
+      scale: 1,
+      opacity:0,
+      delay: 500,
+      origin: 'top',
+      reset:true
+  }, 200 );
+
+      sr.reveal('.icons-list .icon-content', { 
+      duration: 600,
+      scale: 1,
+      opacity:0,
+      delay: 500,
+      origin: 'bottom',
+      reset:true
+  }, 200 );
+
+      sr.reveal('.icon-section-title', { 
+      duration: 600,
+      scale: 1,
+      //opacity:0,
+      delay: 500,
+      origin: 'top',
+      reset:true
+  } );
+       sr.reveal('.process .statement', { 
+      duration: 600,
+      scale: 0,
+      opacity:0,
+      delay: 500,
+      origin: 'top',
+      reset:true
+  } );
+
   //Sidr
 
 $('.sidr-trigger').sidr({

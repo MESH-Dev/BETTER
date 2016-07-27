@@ -28,7 +28,7 @@
 					<?php } ?>
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-					<div class="shaun"><?php the_content(); ?></div>
+					<div class="text-content"><?php the_content(); ?></div>
 
 					<?php endwhile; ?>
 				</div>
@@ -43,7 +43,7 @@
 	      			<?php get_template_part('/partials/quote'); ?>
 	    		</div>
 	    		<?php 
-	    			$has_contact_box = get_field(has_contact_box);
+	    			$has_contact_box = get_field('has_contact_box');
     				if ($has_contact_box == 'true'){
 	    				 get_template_part('/partials/contact-row'); 
 	    				}
