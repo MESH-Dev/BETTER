@@ -142,6 +142,12 @@ $('.sidr-trigger').sidr({
        //console.log("Sidr should be closed");
     });
 
+ $('.page-template-default').load(
+    function(){
+      $.sidr('open', 'sidr-main');
+       //console.log("Sidr should be closed");
+    });
+
  $('.sidr-trigger').click(function(){
   $('.fa').toggleClass('fa-close');
   $('.fa').toggleClass('fa-bars');
