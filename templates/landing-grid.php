@@ -112,6 +112,21 @@ get_header(); ?>
           <? endwhile; ?>
         </div><!-- end wrap -->
       </div> <!-- end content-grid -->
+
+      <?php 
+        $hide_cta = get_field('h_grid_cta');
+        $lg_cta_text = get_field('lg_cta_text', 'options');
+
+        if ($hide_cta == 'true'){
+
+      ?>
+      <div class="container">
+        <div class="contact-cta">
+          <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact"><?php echo $lg_cta_text; ?></a></h2>
+        </div>
+      </div>
+
+      <?php } ?>
       <div id="icon">
             <?php get_template_part('/partials/process-icons'); ?>
         </div>

@@ -365,7 +365,7 @@ header.interior{
 .sidr-trigger{
 	position:absolute;
 	right:20px;
-	top:77px;
+	top:48px;
 	cursor:pointer;
 	z-index:10000;
 	color:white;
@@ -765,6 +765,13 @@ header.interior{
 	}
 }
 
+.contact-cta{
+	margin:60px auto;
+	h2{
+		text-align:center;
+	}
+}
+
 @media only screen and (max-width:768px){
 	.banner{
 		height:auto;
@@ -1052,7 +1059,7 @@ footer{
 	.sidr{
 		.sidr-inner{
 			ul{
-				margin-top:73px;
+				margin-top:42px;
 			}
 		}
 	}
