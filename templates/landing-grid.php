@@ -60,6 +60,7 @@ get_header(); ?>
             while (have_rows('landing_grid')) : the_row(); 
             $landing_content_icon = get_sub_field('landing_content_icon');
             $landing_content_icon_URL = $landing_content_icon['sizes']['icon'];
+            $landing_content_icon_Alt = $landing_content_icon['alt'];
             $landing_content_title = get_sub_field('landing_content_text_title');
             $landing_content_paragraph = get_sub_field('landing_content_paragraph');
 
@@ -83,7 +84,7 @@ get_header(); ?>
 
               <div class="landing-row row <?php echo $number; ?>">
                 <div class="landing-icon">
-                  <img src="<?php echo $landing_content_icon_URL;?>">
+                  <img src="<?php echo $landing_content_icon_URL;?>" alt="<?php echo $landing_content_icon_Alt; ?>">
                 </div> 
                 <div class="landing-content <?php echo $number; ?> ">
                   <h3 class="landing-row-title"><?php echo $landing_content_title; ?></h3>
@@ -103,7 +104,7 @@ get_header(); ?>
                   </p>
                 </div>
                 <div class="landing-icon">
-                  <img src="<?php echo $landing_content_icon_URL;?>">
+                  <img src="<?php echo $landing_content_icon_URL;?>" alt="<?php echo $landing_content_icon_Alt; ?>">
                 </div> 
               </div> <!--  end landing row -->
 

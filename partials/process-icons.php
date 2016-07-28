@@ -20,6 +20,7 @@
 			<?php while (have_rows('icon_list', 'options')) : the_row(); 
 				$icon = get_sub_field('p_icon', 'options');
 				$icon_URL = $icon['sizes']['small'];
+				$icon_Alt = $icon['alt'];
 				//var_dump($icon_URL);
 				$icon_title = get_sub_field('icon_title', 'options');
 				$icon_hover_text = get_sub_field('icon_hover_text', 'options');
@@ -27,7 +28,7 @@
 
 				<div class="three columns">
 					<div class="icon-content">
-						<img src="<?php echo $icon_URL; ?>">
+						<img src="<?php echo $icon_URL; ?>" alt="<?php echo $icon_alt; ?>">
 						<div class="hover-content">
 							<h3 class="icon-title"><?php echo $icon_title; ?></h3> 
 							<p class="hover-text"><?php echo $icon_hover_text; ?></p>
