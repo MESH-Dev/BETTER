@@ -123,7 +123,7 @@ get_header(); ?>
       ?>
       <div class="container">
         <div class="contact-cta">
-          <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact"><?php echo $lg_cta_text; ?></a></h2>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact"><?php echo $lg_cta_text; ?></a>
         </div>
       </div>
 

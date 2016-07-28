@@ -17,8 +17,7 @@ get_header(); ?>
      </div> -->
       <div class="content">
 
-
-        <img src="<?php echo get_template_directory_uri(); ?>/img/better-graphic.png">
+        <img class="fadeIn animated" src="<?php echo get_template_directory_uri(); ?>/img/better-graphic.png">
         <p class="greeting"><?php echo get_field('hp_greeting_text');?></p>
 
       </div>
