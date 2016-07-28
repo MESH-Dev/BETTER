@@ -115,7 +115,7 @@ get_header(); ?>
 
       <?php 
         $hide_cta = get_field('h_grid_cta');
-        var_dump($hide_cta);
+        //var_dump($hide_cta);
         $lg_cta_text = get_field('lg_cta_text', 'options');
 
         if ($hide_cta == 'true'){
