@@ -136,7 +136,12 @@ get_header(); ?>
             <?php get_template_part('/partials/quote'); ?>
         </div>
 
-        <?php get_template_part('/partials/contact-row'); ?>
+        <?php 
+            $has_contact_box = get_field('has_contact_box');
+            if ($has_contact_box == 'true'){
+              get_template_part('/partials/contact-row'); 
+
+            }?>
     </div>
   </div>
 
