@@ -921,6 +921,12 @@ header.interior{
 	}
 }
 
+.error404 .container{
+	min-height:600px;
+	padding:60px 0;
+	text-align:center;
+}
+
 footer{
 	background-color:$purple;
 	color:white;
