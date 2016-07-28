@@ -1361,10 +1361,9 @@ header.interior {
 /* line 768, sass/layout/_main.scss */
 .contact-cta {
   margin: 60px auto;
-}
-/* line 770, sass/layout/_main.scss */
-.contact-cta h2 {
   text-align: center;
+  font-size: 18px;
+  font-family: 'neutra-bold';
 }
 
 @media only screen and (max-width: 768px) {

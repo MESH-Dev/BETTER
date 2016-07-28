@@ -767,9 +767,9 @@ header.interior{
 
 .contact-cta{
 	margin:60px auto;
-	h2{
-		text-align:center;
-	}
+	text-align:center;
+	font-size:18px;
+	@include neutra-bold;
 }
 
 @media only screen and (max-width:768px){
