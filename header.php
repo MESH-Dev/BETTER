@@ -30,6 +30,13 @@
 	================================================== -->
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
+	<!-- Facebook share image
+	================================================== -->
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="329" />
+	<meta property="og:image:height" content="258" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri('/'); ?>/img/logomark-lg.jpg">
+
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.ico">
